@@ -1,0 +1,35 @@
+.icon {
+	display: inline-block;
+	background: no-repeat center;
+	vertical-align: middle;
+}
+
+.icon-doc {
+	background-image: url(../images/icons/doc.png);
+	width: 32px;
+	height: 41px;
+}
+
+.icon-config {
+	background-image: url(../images/icons/config.png);
+	width: 32px;
+	height: 32px;
+}
+
+.icon-tools {
+	background-image: url(../images/icons/tools.png);
+	width: 43px;
+	height: 51px;
+}
+
+.icon-arrow-left {
+	background-image: url(../images/icons/arrow-left.png);
+	width: 20px;
+	height: 30px;
+}
+
+.icon-arrow-right {
+	background-image: url(../images/icons/arrow-right.png);
+	width: 20px;
+	height: 30px;
+}

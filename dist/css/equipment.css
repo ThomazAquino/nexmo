@@ -9673,67 +9673,60 @@ h3 {
   font-size: 20px;
 }
 
-.section-login {
-  height: 100%;
-}
-.section-login .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 100%;
-}
-.section-login .container .form-login {
-  width: 95%;
-  color: #707070;
-}
-.section-login .container .form-login .form-group {
-  margin-bottom: 2.2rem;
-}
-.section-login .container .form-login input {
-  background-color: #F4F4F4;
-  border: none;
-  border-radius: 5px;
-  -webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.18);
-  -moz-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.18);
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.18);
-}
-.section-login .container .form-login .form-check {
-  height: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 40px;
-}
-.section-login .container .form-login input[type=checkbox] {
-  width: 0px;
-  top: -10px;
-}
-.section-login .container .form-login input[type=checkbox]:after {
-  content: " ";
-  background-color: #fff;
+.icon {
   display: inline-block;
-  visibility: visible;
-  height: 35px;
-  width: 35px;
-  -webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.18);
-  -moz-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.18);
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.18);
-  border-radius: 5px;
-}
-.section-login .container .form-login input[type=checkbox]:checked:after {
-  content: "";
-  background-color: #EEB636;
-}
-.section-login .container .form-login .form-check {
-  margin-bottom: 50px;
-}
-.section-login .container .form-login .yellow-link {
-  color: #EEB636;
-  font-size: 13px;
-  display: flex;
-  justify-content: center;
-  margin-top: 12px;
+  background: no-repeat center;
+  vertical-align: middle;
 }
 
-/*# sourceMappingURL=login.css.map */
+.icon-doc {
+  background-image: url(../images/icons/doc.png);
+  width: 32px;
+  height: 41px;
+}
+
+.icon-config {
+  background-image: url(../images/icons/config.png);
+  width: 32px;
+  height: 32px;
+}
+
+.icon-tools {
+  background-image: url(../images/icons/tools.png);
+  width: 43px;
+  height: 51px;
+}
+
+.icon-arrow-left {
+  background-image: url(../images/icons/arrow-left.png);
+  width: 20px;
+  height: 30px;
+}
+
+.icon-arrow-right {
+  background-image: url(../images/icons/arrow-right.png);
+  width: 20px;
+  height: 30px;
+}
+
+.nav-menu {
+  background-color: #707070;
+  height: 81px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.18);
+  box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.18);
+}
+.nav-menu .nav-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-menu .nav-items .group-center-menu .icon-tools {
+  margin: 0 17px;
+}
+
+/*# sourceMappingURL=equipment.css.map */
