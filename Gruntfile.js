@@ -13,7 +13,9 @@ module.exports = function (grunt) {
 		sass: {                              // Task
 			dist: { 
 				files: {                         // Dictionary of files
-					"dist/css/login.css": "src/styles/login.scss", "dist/css/equipment.css": "src/styles/equipment.scss"      // "destination": "source"
+					"dist/css/login.css": "src/styles/login.scss",
+					"dist/css/equipment.css": "src/styles/equipment.scss",
+					"dist/css/process-list.css": "src/styles/process-list.scss"      // "destination": "source"
 				},
 			},
 		},

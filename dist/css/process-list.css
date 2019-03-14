@@ -541,103 +541,74 @@ input[type=checkbox]:checked:after {
   height: 22px;
 }
 
-.section-login {
-  height: 100%;
-  padding-top: 30px;
-}
-.section-login .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 100%;
-}
-.section-login .container img {
-  margin-bottom: 60px;
-}
-.section-login .container .form-login {
-  width: 95%;
-  color: #707070;
-}
-.section-login .container .form-login .form-group {
-  margin-bottom: 2.2rem;
-}
-.section-login .container .form-login input {
-  background-color: #F4F4F4;
-  border: none;
-  border-radius: 5px;
-  -webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.18);
-  -moz-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.18);
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.18);
-}
-.section-login .container .form-login .form-check {
-  height: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: self-start;
-  margin-top: 40px;
-  margin-bottom: 60px;
-}
-.section-login .container .form-login input[type=checkbox] {
-  width: 0px;
-  top: -10px;
-}
-.section-login .container .form-login input[type=checkbox]:after {
-  content: " ";
-  background-color: #fff;
-  display: inline-block;
-  visibility: visible;
-  height: 35px;
-  width: 35px;
-  -webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.18);
-  -moz-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.18);
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.18);
-  border-radius: 5px;
-  border: none;
-}
-.section-login .container .form-login input[type=checkbox]:checked:after {
-  content: "";
-  background-color: #EEB636;
-}
-.section-login .container .form-login .form-check-label {
-  margin-left: 50px;
-  margin-bottom: 0;
-  line-height: 12px;
-}
-.section-login .container .form-login .form-circle {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-bottom: 4.2rem;
-}
-.section-login .container .form-login .form-circle .circle-select {
-  background: linear-gradient(45deg, transparent 50%, #EEB636 50%), linear-gradient(135deg, #EEB636 50%, transparent 50%), linear-gradient(to right, #EEB636, #EEB636);
-  background-position: calc(100% - 19px) calc(1em + -2px), calc(100% - 9px) calc(1em + -2px), 100% 0;
-  background-size: 11px 11px, 11px 11px, 0 3.5em;
-  background-repeat: no-repeat;
-  font: 300 1em/100% "Helvetica Neue", Arial, sans-serif;
-  line-height: 1.5em;
-  padding: 0.5em 3.5em 0.1em 0.1em;
-  border-radius: 0;
-  margin: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+.nav-menu {
+  position: fixed;
+  top: 0;
+  background-color: #707070;
+  height: 81px;
   width: 100%;
-  border: none;
-  border-bottom: 1px solid #c1c1c1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.18);
+  box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.18);
+  z-index: 99;
 }
-.section-login .container .form-login .yellow-link {
-  font-size: 13px;
-  margin-top: 12px;
+.nav-menu .nav-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.section-login .icon-engine {
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
+.nav-menu .nav-items .group-center-menu .icon-tools {
+  margin: 0 17px;
 }
 
-/*# sourceMappingURL=login.css.map */
+.process-group {
+  margin-bottom: 35px;
+}
+.process-group .process-title {
+  color: #BFC4C4;
+  font-size: 14px;
+  display: block;
+  width: 75%;
+  border-bottom: 1px solid #E5E7E7;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+.process-group .process-block {
+  background-color: #EEB636;
+  color: #fff;
+  border-radius: 13px;
+  padding: 10px;
+  -webkit-box-shadow: 0px 2px 10px 0px #EEB636;
+  -moz-box-shadow: 0px 2px 10px 0px #EEB636;
+  box-shadow: 0px 2px 10px 0px #EEB636;
+  margin-bottom: 28px;
+  position: relative;
+}
+.process-group .process-block .block-title {
+  font-size: 20px;
+  font-family: "open_sansbold", sans-serif;
+  margin-bottom: 5px;
+}
+.process-group .process-block .block-desc {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.process-group .process-block .block-info {
+  font-size: 10px;
+}
+.process-group .process-block .block-date {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  font-size: 13px;
+}
+.process-group .process-block .icon-download {
+  position: absolute;
+  bottom: 24px;
+  right: 28px;
+}
+
+/*# sourceMappingURL=process-list.css.map */
