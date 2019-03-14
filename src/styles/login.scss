@@ -1,10 +1,15 @@
-@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "autoload/reset";
+
+//@import "../../node_modules/bootstrap/scss/bootstrap";
 @import "common/global";
 @import "common/variables";
-@import "common/buttons";
+@import "components/buttons";
+@import "components/forms";
+@import "common/icons";
 
 .section-login {
 	height: 100%;
+	padding-top: 30px;
 
 	.container {
 		display: flex;
@@ -12,6 +17,10 @@
     justify-content: space-evenly;
     align-items: center;
 		height: 100%;
+
+		img {
+			margin-bottom: 60px;
+		}
 	
 		.form-login {
 			width: 95%;
@@ -36,6 +45,7 @@
 				flex-direction: column;
 				justify-content: center;
 				margin-top: 40px;
+				margin-bottom: 60px;
 			}
 
 			input[type=checkbox] {
@@ -61,9 +71,38 @@
 				background-color: $color-primary;
 			}
 
-			.form-check {
-				margin-bottom: 50px;
+			.form-check-label {
+				margin-left: 50px;
+				margin-bottom: 0;
 			}
+
+			.form-circle {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				margin-bottom: 4.2rem;
+
+				.circle-select {
+					background: linear-gradient(45deg, transparent 50%, #EEB636 50%), linear-gradient(135deg, #EEB636 50%, transparent 50%), linear-gradient(to right, #EEB636, #EEB636);
+					background-position: calc(100% - 19px) calc(1em + -2px), calc(100% - 9px) calc(1em + -2px), 100% 0;
+					background-size: 11px 11px, 11px 11px, 0 3.5em;
+					background-repeat: no-repeat;
+					font: 300 1em/100% "Helvetica Neue", Arial, sans-serif;
+					line-height: 1.5em;
+					padding: 0.5em 3.5em 0.1em 0.1em;
+					border-radius: 0;
+					margin: 0;
+					-webkit-box-sizing: border-box;
+					-moz-box-sizing: border-box;
+					box-sizing: border-box;
+					-webkit-appearance: none;
+					-moz-appearance: none;
+					width: 100%;
+					border: none;
+					border-bottom: 1px solid #c1c1c1;
+				}
+			}
+			
 
 			.yellow-link {
 				color: $color-primary;
@@ -71,7 +110,13 @@
 				display: flex;
 				justify-content: center;
 				margin-top: 12px;
+			}
 		}
-		}
+	}
+
+	.icon-engine {
+		position: absolute;
+    bottom: 15px;
+    left: 15px;
 	}
 }

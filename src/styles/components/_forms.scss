@@ -1,0 +1,35 @@
+.form-group {
+    margin-bottom: 2.2rem;
+}
+
+.form-check {
+    height: 23px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+input[type=checkbox] {
+    width: 23px;
+    height: 23px;
+}
+
+input[type=checkbox]:after {
+    content: " ";
+    background-color: #fff;
+    display: inline-block;
+    visibility: visible;
+    height: 23px;
+    width: 23px;
+    border: 1px solid $color-primary;
+}
+
+input[type=checkbox]:checked:after {
+    content: "";
+    background-color: $color-primary;
+}
+
+.form-check-label {
+    margin-left: 50px;
+    margin-bottom: 0;
+}

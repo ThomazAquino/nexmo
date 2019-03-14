@@ -1,6 +1,23 @@
-@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "autoload/reset";
+
+//@import "../../node_modules/bootstrap/scss/bootstrap";
 @import "common/global";
 @import "common/variables";
-@import "common/buttons";
+@import "components/buttons";
+@import "components/forms";
 @import "common/icons";
+
 @import "common/menu";
+
+.check-group {
+    padding-left: 30px;
+
+    .form-check {
+        margin-bottom: 40px;
+
+        label {
+            font-size: 20px;
+            color: $secondary;
+        }
+    }
+}
