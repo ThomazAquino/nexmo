@@ -17,6 +17,7 @@
     "grunt-contrib-watch": "^1.1.0"
   },
   "dependencies": {
-    "imagemin-gifsicle": "^6.0.1"
+    "imagemin-gifsicle": "^6.0.1",
+    "connect": "^2.25.7"
   }
 }

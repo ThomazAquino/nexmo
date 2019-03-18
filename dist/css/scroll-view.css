@@ -620,51 +620,29 @@ input[type=checkbox]:checked:after {
   transform: translateX(-50%);
 }
 
-.process-group {
-  margin-bottom: 35px;
-}
-.process-group .process-title {
-  color: #BFC4C4;
-  font-size: 14px;
-  display: block;
-  width: 75%;
-  border-bottom: 1px solid #E5E7E7;
-  margin-bottom: 10px;
-  margin-left: 5px;
-}
-.process-group .process-block {
-  background-color: #EEB636;
-  color: #fff;
-  border-radius: 13px;
-  padding: 10px;
-  -webkit-box-shadow: 0px 2px 10px 0px #EEB636;
-  -moz-box-shadow: 0px 2px 10px 0px #EEB636;
-  box-shadow: 0px 2px 10px 0px #EEB636;
-  margin-bottom: 28px;
-  position: relative;
-}
-.process-group .process-block .block-title {
-  font-size: 20px;
-  font-family: "open_sansbold", sans-serif;
-  margin-bottom: 5px;
-}
-.process-group .process-block .block-desc {
-  font-size: 15px;
-  margin-bottom: 10px;
-}
-.process-group .process-block .block-info {
-  font-size: 10px;
-}
-.process-group .process-block .block-date {
-  position: absolute;
-  top: 10px;
-  right: 16px;
-  font-size: 13px;
-}
-.process-group .process-block .icon-download {
-  position: absolute;
-  bottom: 24px;
-  right: 28px;
+.scroll-back {
+  background-image: url(../images/icons/information-back.jpg);
+  background-repeat: no-repeat;
+  background-position-x: 112%;
+  background-position-y: 12%;
 }
 
-/*# sourceMappingURL=process-list.css.map */
+.info-group {
+  margin-bottom: 30px;
+}
+.info-group .info-title {
+  color: rgba(112, 112, 112, 0.5);
+  font-weight: 300;
+  font-size: 15px;
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+.info-group .info-text {
+  color: #707070;
+  font-weight: 300;
+  font-size: 20px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+/*# sourceMappingURL=scroll-view.css.map */

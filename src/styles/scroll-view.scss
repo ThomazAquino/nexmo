@@ -1,0 +1,38 @@
+@import "autoload/reset";
+
+//@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "common/global";
+@import "common/variables";
+@import "components/buttons";
+@import "components/forms";
+@import "common/icons";
+
+@import "common/menu";
+
+
+.scroll-back {
+	background-image: url(../images/icons/information-back.jpg);
+	background-repeat: no-repeat;
+	background-position-x: 112%;
+	background-position-y: 12%;
+}
+
+.info-group {
+	margin-bottom: 30px;
+
+	.info-title {
+		color: rgba(112, 112, 112, .5);
+		font-weight: 300;
+		font-size: 15px;
+		margin-bottom: 5px;
+		margin-top: 0;
+	}
+
+	.info-text {
+		color: rgba(112, 112, 112, 1);
+		font-weight: 300;
+		font-size: 20px;
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+}

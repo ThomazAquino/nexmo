@@ -106,6 +106,12 @@
 				}
 			}
 			
+			.form-control {
+				&:focus {
+					outline: 0;
+					box-shadow: 0 0 0 0.2rem rgba(238,182,54,.25);
+				}
+			}
 
 			.yellow-link {
 				font-size: 13px;

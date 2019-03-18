@@ -11,6 +11,16 @@ body.has-fixed-menu {
 	font-weight: 400;
 }
 
+.title-main-menu {
+    color: #767676;
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 300;
+    margin: 0;
+}
+
 .img-fluid {
 	max-width: 100%;
 	height: auto;
@@ -63,4 +73,8 @@ label {
 
 .init-content {
     padding-top: 40px;
+}
+
+.left-padding {
+    padding-left: 30px; 
 }

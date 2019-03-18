@@ -45,3 +45,29 @@
 	width: 22px;
 	height: 22px;
 }
+
+.icon-more {
+	background-image: url(../images/icons/more.png);
+	width: 25px;
+	height: 25px;
+}
+
+.icon-information {
+	background-image: url(../images/icons/information.png);
+	width: 11px;
+	height: 44px;
+}
+
+.icon-arrow-down-yellow {
+	background-image: url(../images/icons/arrow-down-yellow.png);
+	width: 23px;
+	height: 23px;
+}
+
+.menu-more {
+	background-color: $color-primary;
+    padding: 30px;
+    border-radius: 50%;
+    position: relative;
+    top: 26px;
+}
