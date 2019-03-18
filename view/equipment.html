@@ -50,7 +50,7 @@
 			  </div>
 			  <div class="form-check">
 				<input type="checkbox" class="form-check-input" id="exampleCheck1">
-				<label class="form-check-label" for="exampleCheck1">Innenausstattung: 
+				<label class="form-check-label" id="test" for="exampleCheck1">Innenausstattung: 
 					Dekoreinlagen Dark Silver brushed
 					</label>
 			  </div>
@@ -59,6 +59,22 @@
 				<label class="form-check-label" for="exampleCheck1">Komfortschließanlage</label>
 			  </div>
 		</div>
+
+
+<script>
+	let labelsEl = document.querySelectorAll(".form-check-label"); // Select all labels
+
+	labelsEl.forEach((labelEl, index) => { // forEach in all labels
+
+			//console.log(labelEl.outerText.length, index);
+
+			if (labelEl.outerText.length > 40) {
+				labelEl.style.fontSize = '13px';
+			} else if (labelEl.outerText.length > 20) {
+				labelEl.style.fontSize = '16px';
+			}
+	});
+</script>
 
 		<a href="#" class="yellow-link">Hinzufügen</a>
 	</div>

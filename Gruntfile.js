@@ -16,6 +16,7 @@ module.exports = function (grunt) {
 					"dist/css/login.css": "src/styles/login.scss",
 					"dist/css/equipment.css": "src/styles/equipment.scss",
 					"dist/css/process-list.css": "src/styles/process-list.scss",
+					"dist/css/wheels.css": "src/styles/wheels.scss",
 					"dist/css/scroll-view.css": "src/styles/scroll-view.scss"      // "destination": "source"
 				},
 			},
