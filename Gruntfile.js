@@ -17,7 +17,10 @@ module.exports = function (grunt) {
 					"dist/css/equipment.css": "src/styles/equipment.scss",
 					"dist/css/process-list.css": "src/styles/process-list.scss",
 					"dist/css/wheels.css": "src/styles/wheels.scss",
-					"dist/css/scroll-view.css": "src/styles/scroll-view.scss"      // "destination": "source"
+					"dist/css/schaden.css": "src/styles/schaden.scss",
+					"dist/css/schaden-list.css": "src/styles/schaden-list.scss",
+					"dist/css/schaden-details.css": "src/styles/schaden-details.scss",
+					"dist/css/scroll-view.css": "src/styles/scroll-view.scss" // "destination": "source"
 				},
 			},
 		},

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Schaden</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <script src="main.js"></script> -->
+	<link rel="stylesheet" href="../dist/css/schaden-list.css">
+</head>
+<body class="has-fixed-menu">
+	<nav class="nav-menu">
+		<div class="container">
+			<div class="nav-items">
+				<i class="icon icon-doc"></i>
+					<div class="group-center-menu">
+						<i class="icon icon-arrow-left"></i>
+						<i class="icon icon-tools"></i>
+						<i class="icon icon-arrow-right"></i>
+						<i class="icon icon-arrow-down-yellow"></i>
+					</div>
+				<i class="icon icon-config"></i>
+			</div>
+		</div>
+	</nav>
+
+	<div class="btn-more">
+		<i class="icon icon-more menu-more"></i>
+	</div>
+	
+
+	<div class="container">
+		<div class="pre-row">
+			<div class="schaden-liste-row">
+				<div class="schaden-liste-genereal">
+					<div class="crop-img">
+						<img src="" alt="" class="schaden-liste-img">
+					</div>
+					<div class="schaden-liste-texts">
+						<h2 class="schaden-liste-title">Altschaden prüfen</h2>
+						<h3 class="schaden-liste-subtitle">Türfangband vorne links</h3>
+						<span class="schaden-liste-span">Altschaden prüfen</span>
+						<span class="schaden-liste-span">Altschaden prüfen</span>
+					</div>
+				</div>
+				<div class="schaden-liste-menu">
+					<div class="square-icon">
+						<i class="icon icon-tools-white"></i>
+					</div>
+					<div class="square-icon">
+						<i class="icon icon-tools-white-alt"></i>
+					</div>
+				</div>
+			</div>
+			<div class="schaden-x">
+				<i class="icon icon-red-close"></i>
+			</div>
+			<div class="yellow-confirmation">
+				<i class="icon icon-confirmation-big"></i>
+			</div>
+		</div>
+
+		<div class="pre-row">
+				<div class="schaden-liste-row">
+					<div class="schaden-liste-genereal">
+						<div class="crop-img">
+							<img src="../dist/images/car.jpg" alt="" class="schaden-liste-img">
+						</div>
+						<div class="schaden-liste-texts">
+							<h2 class="schaden-liste-title">Altschaden prüfen</h2>
+							<h3 class="schaden-liste-subtitle">Türfangband vorne links</h3>
+							<span class="schaden-liste-span">Altschaden prüfen</span>
+							<span class="schaden-liste-span">Altschaden prüfen</span>
+						</div>
+					</div>
+					<div class="schaden-liste-menu">
+						<div class="square-icon">
+							<i class="icon icon-tools-white"></i>
+						</div>
+						<div class="square-icon">
+							<i class="icon icon-tools-white-alt"></i>
+						</div>
+					</div>
+				</div>
+				<div class="schaden-x">
+					<i class="icon icon-red-close"></i>
+				</div>
+				<div class="yellow-confirmation">
+					<i class="icon icon-confirmation-big"></i>
+				</div>
+			</div>
+
+			<div class="pre-row">
+					<div class="schaden-liste-row">
+						<div class="schaden-liste-genereal">
+							<div class="crop-img">
+								<img src="" alt="" class="schaden-liste-img">
+							</div>
+							<div class="schaden-liste-texts">
+								<h2 class="schaden-liste-title">Altschaden prüfen</h2>
+								<h3 class="schaden-liste-subtitle">Türfangband vorne links</h3>
+								<span class="schaden-liste-span">Altschaden prüfen</span>
+								<span class="schaden-liste-span">Altschaden prüfen</span>
+							</div>
+						</div>
+						<div class="schaden-liste-menu">
+							<div class="square-icon">
+								<i class="icon icon-tools-white"></i>
+							</div>
+							<div class="square-icon">
+								<i class="icon icon-tools-white-alt"></i>
+							</div>
+						</div>
+					</div>
+					<div class="schaden-x">
+						<i class="icon icon-red-close"></i>
+					</div>
+					<div class="yellow-confirmation">
+						<i class="icon icon-confirmation-big"></i>
+					</div>
+				</div>
+
+				<div class="pre-row">
+						<div class="schaden-liste-row">
+							<div class="schaden-liste-genereal">
+								<div class="crop-img">
+									<img src="../dist/images/car.jpg" alt="" class="schaden-liste-img">
+								</div>
+								<div class="schaden-liste-texts">
+									<h2 class="schaden-liste-title">Altschaden prüfen</h2>
+									<h3 class="schaden-liste-subtitle">Türfangband vorne links</h3>
+									<span class="schaden-liste-span">Altschaden prüfen</span>
+									<span class="schaden-liste-span">Altschaden prüfen</span>
+								</div>
+							</div>
+							<div class="schaden-liste-menu">
+								<div class="square-icon">
+									<i class="icon icon-tools-white"></i>
+								</div>
+								<div class="square-icon">
+									<i class="icon icon-tools-white-alt"></i>
+								</div>
+							</div>
+						</div>
+						<div class="schaden-x">
+							<i class="icon icon-red-close"></i>
+						</div>
+						<div class="yellow-confirmation">
+							<i class="icon icon-confirmation-big"></i>
+						</div>
+					</div>
+
+		
+
+		<a href="#" class="yellow-link">Hinzufügen</a>
+	</div>
+
+	<script>
+
+	// class '.row-left' aply swip left effect, must by use in '.schaden-liste-row' element
+	// class '.row-left-reverse' aply swip BACK effect, must by use in '.schaden-liste-row' element
+	// class '.schaden-delet-confirmation' aply yellow background and push element up, must by use in '.pre-row' element. This effects have 2 seconds, after that the lement can be deleted of the DOM. 
+	
+	document.addEventListener('keyup', e => {
+		console.log(e.key);
+    switch (e.key) {
+                       
+				case 'ArrowLeft':
+				document.querySelector('.schaden-liste-row').classList.add('row-left');
+				document.querySelector('.schaden-liste-row').classList.remove('row-left-reverse');
+					break;
+
+				case 'ArrowRight':
+				document.querySelector('.schaden-liste-row').classList.add('row-left-reverse');
+				document.querySelector('.schaden-liste-row').classList.remove('row-left');
+					break;
+					
+				case 'ArrowUp':
+				document.querySelector('.schaden-liste-row').classList.add('row-left-reverse');
+				document.querySelector('.pre-row').classList.add('schaden-delet-confirmation');
+					break;
+				case '4':
+				document.querySelector('.pre-row').style.display = 'none'; // or delete the node
+        break;
+                
+            }
+        });
+	</script>
+</body>
+</html>

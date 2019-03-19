@@ -668,46 +668,160 @@ input[type=checkbox]:checked:after {
   transform: translateX(-50%);
 }
 
-.controls-wheels {
-  width: 300px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 40px auto;
-}
-.controls-wheels i {
-  border: 2px solid #707070;
-  border-radius: 50%;
-  padding: 22px;
+.pre-row {
+  background: #D6D9DE;
+  border-radius: 20px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
   position: relative;
 }
-.controls-wheels i:after {
-  content: " ";
+.pre-row .schaden-x {
   position: absolute;
-  z-index: -1;
-  top: -16px;
-  left: -16px;
-  border: 2px solid #707070;
-  border-radius: 50%;
-  padding: 36px;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
 }
 
-.row-wheels {
+.schaden-liste-row {
+  background-color: #F7F7F7;
+  padding: 15px 5px 15px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 6px 26px -8px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 6px 26px -8px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 6px 26px -8px rgba(0, 0, 0, 0.16);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
+  z-index: 3;
 }
-.row-wheels .wheel-bar {
+.schaden-liste-row .schaden-liste-genereal {
+  display: flex;
+}
+.schaden-liste-row .schaden-liste-genereal .crop-img {
+  width: 89px;
+  height: 89px;
+  overflow: hidden;
+  background-color: #D6D9DE;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 6px 33px -4px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 6px 33px -4px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 6px 33px -4px rgba(0, 0, 0, 0.16);
+}
+.schaden-liste-row .schaden-liste-genereal .crop-img img {
+  height: 100%;
+  width: auto;
+}
+.schaden-liste-row .schaden-liste-genereal .schaden-liste-texts {
+  color: #707070;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.schaden-liste-row .schaden-liste-genereal .schaden-liste-texts .schaden-liste-title {
+  font-size: 12px;
+  font-weight: 300;
+  margin: 0;
+}
+.schaden-liste-row .schaden-liste-genereal .schaden-liste-texts .schaden-liste-subtitle {
+  font-size: 10px;
+  font-weight: 300;
+  margin: 0;
+}
+.schaden-liste-row .schaden-liste-genereal .schaden-liste-texts .schaden-liste-span {
+  font-size: 7px;
+  font-weight: 300;
+}
+.schaden-liste-row .schaden-liste-menu {
+  display: flex;
+  flex-direction: column;
   position: absolute;
-  height: 5px;
-  width: 100%;
-  background-color: rgba(112, 112, 112, 0.2);
+  right: 3px;
+  height: 100%;
+  padding: 5px 0;
 }
-.row-wheels .row-number {
-  color: rgba(112, 112, 112, 0.55);
-  font-size: 70px;
+.schaden-liste-row .schaden-liste-menu .square-icon {
+  background-color: #D6D9DE;
+  height: 49%;
+  padding: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 6px 33px -4px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 6px 33px -4px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 6px 33px -4px rgba(0, 0, 0, 0.16);
+}
+.schaden-liste-row .schaden-liste-menu .square-icon:first-of-type {
+  margin-bottom: 5px;
 }
 
-/*# sourceMappingURL=wheels.css.map */
+.row-left {
+  animation: schaden-swip 0.3s forwards 0s ease-in;
+}
+
+.row-left-reverse {
+  animation: row-left-reverse 0.2s forwards 0s ease-in;
+}
+
+.pre-row .yellow-confirmation {
+  position: absolute;
+  top: 0;
+  border-radius: 20px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: #EEB636;
+  z-index: 99999;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  opacity: 0;
+}
+
+.schaden-delet-confirmation {
+  animation: schaden-delet 1.3s forwards 0.6s ease-in;
+}
+.schaden-delet-confirmation .yellow-confirmation {
+  opacity: 1;
+  transition: 1s;
+}
+
+@keyframes schaden-swip {
+  0% {
+    transform: translateX(0);
+  }
+  1% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(-100px);
+  }
+}
+@keyframes row-left-reverse {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes schaden-delet {
+  0% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(40px);
+  }
+  100% {
+    transform: translateY(-1000px);
+  }
+}
+
+/*# sourceMappingURL=schaden-list.css.map */

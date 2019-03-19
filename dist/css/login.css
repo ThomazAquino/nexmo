@@ -431,6 +431,10 @@ label {
   opacity: 0.2;
 }
 
+.d-none {
+  display: none !important;
+}
+
 /** Import Bootstrap functions */
 .btn {
   display: inline-block;
@@ -462,6 +466,18 @@ label {
   -webkit-box-shadow: 0px 2px 18px -3px #EEB636;
   -moz-box-shadow: 0px 2px 18px -3px #EEB636;
   box-shadow: 0px 2px 18px -3px #EEB636;
+}
+
+.btn-more {
+  background-color: #EEB636;
+  border-radius: 50%;
+  position: relative;
+  margin: 25px auto 25px auto;
+  width: 37px;
+  height: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .form-group {
@@ -500,22 +516,22 @@ input[type=checkbox]:checked:after {
   margin-bottom: 0;
 }
 
-.search-input {
+.group-input-search {
   background-color: #F4F4F4;
   border: none;
-  border-radius: 40px;
+  border-radius: 5px;
   -webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.18);
   -moz-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.18);
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.18);
-  padding: 3px 0 3px 15px;
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 25px;
-  font-size: 13px;
+  box-shadow: 0px 4px 15px 0 rgba(0, 0, 0, 0.18);
+  padding: 8px 0 8px 8px;
 }
-.search-input:focus {
+.group-input-search .search-input {
+  background: transparent;
+  border: none;
+  padding-left: 15px;
+}
+.group-input-search .search-input:focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(238, 182, 54, 0.25);
 }
 
 .icon {
@@ -548,6 +564,12 @@ input[type=checkbox]:checked:after {
   height: 30px;
 }
 
+.icon-arrow-left-dark {
+  background-image: url(../images/icons/arrow-left-dark.png);
+  width: 20px;
+  height: 30px;
+}
+
 .icon-arrow-right {
   background-image: url(../images/icons/arrow-right.png);
   width: 20px;
@@ -568,8 +590,8 @@ input[type=checkbox]:checked:after {
 
 .icon-more {
   background-image: url(../images/icons/more.png);
-  width: 25px;
-  height: 25px;
+  width: 15px;
+  height: 15px;
 }
 
 .icon-information {
@@ -584,12 +606,34 @@ input[type=checkbox]:checked:after {
   height: 23px;
 }
 
-.menu-more {
-  background-color: #EEB636;
-  padding: 30px;
-  border-radius: 50%;
-  position: relative;
-  top: 26px;
+.icon-tools-white {
+  background-image: url(../images/icons/tools-white.png);
+  width: 19px;
+  height: 22px;
+}
+
+.icon-tools-white-alt {
+  background-image: url(../images/icons/tools-white-alt.png);
+  width: 23px;
+  height: 22px;
+}
+
+.icon-red-close {
+  background-image: url(../images/icons/red-close.png);
+  width: 40px;
+  height: 43px;
+}
+
+.icon-confirmation-big {
+  background-image: url(../images/icons/confirmation-big.png);
+  width: 48px;
+  height: 50px;
+}
+
+.icon-intensely {
+  background-image: url(../images/icons/intensely.png);
+  width: 17px;
+  height: 18px;
 }
 
 .section-login {

@@ -28,6 +28,12 @@
 	height: 30px;
 }
 
+.icon-arrow-left-dark {
+	background-image: url(../images/icons/arrow-left-dark.png);
+	width: 20px;
+	height: 30px;
+}
+
 .icon-arrow-right {
 	background-image: url(../images/icons/arrow-right.png);
 	width: 20px;
@@ -48,8 +54,8 @@
 
 .icon-more {
 	background-image: url(../images/icons/more.png);
-	width: 25px;
-	height: 25px;
+	width: 15px;
+	height: 15px;
 }
 
 .icon-information {
@@ -64,10 +70,32 @@
 	height: 23px;
 }
 
-.menu-more {
-	background-color: $color-primary;
-    padding: 30px;
-    border-radius: 50%;
-    position: relative;
-    top: 26px;
+.icon-tools-white {
+	background-image: url(../images/icons/tools-white.png);
+	width: 19px;
+	height: 22px;
+}
+
+.icon-tools-white-alt {
+	background-image: url(../images/icons/tools-white-alt.png);
+	width: 23px;
+	height: 22px;
+}
+
+.icon-red-close {
+	background-image: url(../images/icons/red-close.png);
+	width: 40px;
+	height: 43px;
+}
+
+.icon-confirmation-big {
+	background-image: url(../images/icons/confirmation-big.png);
+	width: 48px;
+	height: 50px;
+}
+
+.icon-intensely {
+	background-image: url(../images/icons/intensely.png);
+	width: 17px;
+	height: 18px;
 }
