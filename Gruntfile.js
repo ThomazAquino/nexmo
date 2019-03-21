@@ -20,6 +20,7 @@ module.exports = function (grunt) {
 					"dist/css/schaden.css": "src/styles/schaden.scss",
 					"dist/css/schaden-list.css": "src/styles/schaden-list.scss",
 					"dist/css/schaden-details.css": "src/styles/schaden-details.scss",
+					"dist/css/schaden-check.css": "src/styles/schaden-check.scss",
 					"dist/css/scroll-view.css": "src/styles/scroll-view.scss" // "destination": "source"
 				},
 			},
