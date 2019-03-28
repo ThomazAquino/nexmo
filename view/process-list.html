@@ -23,50 +23,141 @@
 		</div>
 	</nav>
 
-	<div class="container init-content">
-		<input type="search" class="search-input" name="" id="" placeholder="Search..">
+	<div class="container">
+
+			<div class="search-center">
+				<div class="group-input-search">
+					<i class="icon icon-intensely"></i>
+					<input type="search" name="" id="" class="search-input">
+				</div>
+			</div>
+		
 		<div class="process-group">
 			<span class="process-title">diese Woche</span>
-			<div class="process-block">
-				<div class="block-title">Auftrag 1</div>
-				<div class="block-desc">Auftragspartner: Volkswagen</div>
-				<div class="block-info">75%</div>
-				<div class="block-date">24.10.18</div>
-				<i class="icon icon-download"></i>
+
+			<div class="pre-row">
+				<div class="process-block">
+					<div class="block-title">Auftrag 1</div>
+					<div class="block-desc">Auftragspartner: Volkswagen</div>
+					<div class="block-info">75%</div>
+					<div class="block-date">24.10.18</div>
+					
+					<i class="icon icon-download-grey"></i>
+				</div>
+				<div class="schaden-x">
+					<i class="icon icon-red-close"></i>
+				</div>
+				<div class="yellow-confirmation">
+					<i class="icon icon-confirmation-big"></i>
+				</div>
 			</div>
-			<div class="process-block">
-				<div class="block-title">Auftrag 1</div>
-				<div class="block-desc">Auftragspartner: Volkswagen</div>
-				<div class="block-info">75%</div>
-				<div class="block-date">24.10.18</div>
-				<i class="icon icon-download"></i>
+			
+			<div class="pre-row">
+				<div class="process-block">
+					<div class="block-title">Auftrag 1</div>
+					<div class="block-desc">Auftragspartner: Volkswagen</div>
+					<div class="block-info">75%</div>
+					<div class="block-date">24.10.18</div>
+					
+					<i class="icon icon-download-grey"></i>
+				</div>
+				<div class="schaden-x">
+					<i class="icon icon-red-close"></i>
+				</div>
+				<div class="yellow-confirmation">
+					<i class="icon icon-confirmation-big"></i>
+				</div>
 			</div>
 		</div>
 
 		<div class="process-group">
 			<span class="process-title">diese Woche</span>
-			<div class="process-block">
-				<div class="block-title">Auftrag 1</div>
-				<div class="block-desc">Auftragspartner: Volkswagen</div>
-				<div class="block-info">75%</div>
-				<div class="block-date">24.10.18</div>
-				<i class="icon icon-download"></i>
+
+				<div class="pre-row">
+				<div class="process-block">
+					<div class="block-title">Auftrag 1</div>
+					<div class="block-desc">Auftragspartner: Volkswagen</div>
+					<div class="block-info">75%</div>
+					<div class="block-date">24.10.18</div>
+					
+					<i class="icon icon-download-grey"></i>
+				</div>
+				<div class="schaden-x">
+					<i class="icon icon-red-close"></i>
+				</div>
+				<div class="yellow-confirmation">
+					<i class="icon icon-confirmation-big"></i>
+				</div>
 			</div>
-			<div class="process-block">
-				<div class="block-title">Auftrag 1</div>
-				<div class="block-desc">Auftragspartner: Volkswagen</div>
-				<div class="block-info">75%</div>
-				<div class="block-date">24.10.18</div>
-				<i class="icon icon-download"></i>
+
+			<div class="pre-row">
+				<div class="process-block">
+					<div class="block-title">Auftrag 1</div>
+					<div class="block-desc">Auftragspartner: Volkswagen</div>
+					<div class="block-info">75%</div>
+					<div class="block-date">24.10.18</div>
+					
+					<i class="icon icon-download-grey"></i>
+				</div>
+				<div class="schaden-x">
+					<i class="icon icon-red-close"></i>
+				</div>
+				<div class="yellow-confirmation">
+					<i class="icon icon-confirmation-big"></i>
+				</div>
 			</div>
-			<div class="process-block">
-				<div class="block-title">Auftrag 1</div>
-				<div class="block-desc">Auftragspartner: Volkswagen</div>
-				<div class="block-info">75%</div>
-				<div class="block-date">24.10.18</div>
-				<i class="icon icon-download"></i>
+
+			<div class="pre-row">
+				<div class="process-block">
+					<div class="block-title">Auftrag 1</div>
+					<div class="block-desc">Auftragspartner: Volkswagen</div>
+					<div class="block-info">75%</div>
+					<div class="block-date">24.10.18</div>
+					
+					<i class="icon icon-download-grey"></i>
+				</div>
+				<div class="schaden-x">
+					<i class="icon icon-red-close"></i>
+				</div>
+				<div class="yellow-confirmation">
+					<i class="icon icon-confirmation-big"></i>
+				</div>
 			</div>
 		</div>
 	</div>
+
+	<script>
+
+			// class '.row-left' aply swip left effect, must by use in '.process-block' element
+			// class '.row-left-reverse' aply swip BACK effect, must by use in '.process-block' element
+			// class '.schaden-delet-confirmation' aply yellow background and push element up, must by use in '.pre-row' element. This effects have 2 seconds, after that the lement can be deleted of the DOM. 
+			
+			document.addEventListener('keyup', e => {
+				console.log(e.key);
+			switch (e.key) {
+							   
+						case 'ArrowLeft':
+						document.querySelector('.process-block').classList.add('row-left');
+						document.querySelector('.process-block').classList.remove('row-left-reverse');
+							break;
+		
+						case 'ArrowRight':
+						document.querySelector('.process-block').classList.add('row-left-reverse');
+						document.querySelector('.process-block').classList.remove('row-left');
+							break;
+							
+						case 'ArrowUp':
+						document.querySelector('.process-block').classList.add('row-left-reverse');
+						document.querySelector('.pre-row').classList.add('schaden-delet-confirmation');
+							break;
+						case '4':
+						document.querySelector('.pre-row').style.display = 'none'; // or delete the node
+				break;
+						
+					}
+				});
+			</script>
+
+
 </body>
 </html>

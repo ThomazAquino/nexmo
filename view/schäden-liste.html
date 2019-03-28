@@ -31,6 +31,15 @@
 
 	<div class="container">
 		<div class="pre-row">
+			<div class="schaden-x">
+				<i class="icon icon-red-close"></i>
+			</div>
+			<div class="yellow-confirmation">
+				<i class="icon icon-confirmation-big"></i>
+			</div>
+			<div class="repared-confirmation">
+				<i class="icon icon-confirmation-big"></i>
+			</div>
 			<div class="schaden-liste-row">
 				<div class="schaden-liste-genereal">
 					<div class="crop-img">
@@ -44,23 +53,26 @@
 					</div>
 				</div>
 				<div class="schaden-liste-menu">
-					<div class="square-icon">
+					<div class="square-icon-repared">
 						<i class="icon icon-tools-white"></i>
 					</div>
-					<div class="square-icon">
+					<div class="square-icon-no-repared">
 						<i class="icon icon-tools-white-alt"></i>
 					</div>
 				</div>
-			</div>
-			<div class="schaden-x">
-				<i class="icon icon-red-close"></i>
-			</div>
-			<div class="yellow-confirmation">
-				<i class="icon icon-confirmation-big"></i>
+				<svg class="arrow-left" xmlns="http://www.w3.org/2000/svg" width="19.053" height="29.36" viewBox="0 0 19.053 29.36">
+					<path id="arrow-left-path" data-name="Path 1655" d="M16.68,21.053,2,6.373,6.373,2,16.68,12.307,26.987,2,31.36,6.373Z" transform="translate(21.053 -2) rotate(90)" fill="#d6d9de"/>
+				</svg>
 			</div>
 		</div>
 
 		<div class="pre-row">
+				<div class="schaden-x">
+					<i class="icon icon-red-close"></i>
+				</div>
+				<div class="yellow-confirmation">
+					<i class="icon icon-confirmation-big"></i>
+				</div>
 				<div class="schaden-liste-row">
 					<div class="schaden-liste-genereal">
 						<div class="crop-img">
@@ -74,23 +86,23 @@
 						</div>
 					</div>
 					<div class="schaden-liste-menu">
-						<div class="square-icon">
+						<div class="square-icon-repared">
 							<i class="icon icon-tools-white"></i>
 						</div>
-						<div class="square-icon">
+						<div class="square-icon-no-repared">
 							<i class="icon icon-tools-white-alt"></i>
 						</div>
 					</div>
 				</div>
-				<div class="schaden-x">
-					<i class="icon icon-red-close"></i>
-				</div>
-				<div class="yellow-confirmation">
-					<i class="icon icon-confirmation-big"></i>
-				</div>
 			</div>
 
 			<div class="pre-row">
+					<div class="schaden-x">
+						<i class="icon icon-red-close"></i>
+					</div>
+					<div class="yellow-confirmation">
+						<i class="icon icon-confirmation-big"></i>
+					</div>
 					<div class="schaden-liste-row">
 						<div class="schaden-liste-genereal">
 							<div class="crop-img">
@@ -104,23 +116,23 @@
 							</div>
 						</div>
 						<div class="schaden-liste-menu">
-							<div class="square-icon">
+							<div class="square-icon-repared">
 								<i class="icon icon-tools-white"></i>
 							</div>
-							<div class="square-icon">
+							<div class="square-icon-no-repared">
 								<i class="icon icon-tools-white-alt"></i>
 							</div>
 						</div>
 					</div>
-					<div class="schaden-x">
-						<i class="icon icon-red-close"></i>
-					</div>
-					<div class="yellow-confirmation">
-						<i class="icon icon-confirmation-big"></i>
-					</div>
 				</div>
 
 				<div class="pre-row">
+						<div class="schaden-x">
+							<i class="icon icon-red-close"></i>
+						</div>
+						<div class="yellow-confirmation">
+							<i class="icon icon-confirmation-big"></i>
+						</div>
 						<div class="schaden-liste-row">
 							<div class="schaden-liste-genereal">
 								<div class="crop-img">
@@ -134,19 +146,13 @@
 								</div>
 							</div>
 							<div class="schaden-liste-menu">
-								<div class="square-icon">
+								<div class="square-icon-repared">
 									<i class="icon icon-tools-white"></i>
 								</div>
-								<div class="square-icon">
+								<div class="square-icon-no-repared">
 									<i class="icon icon-tools-white-alt"></i>
 								</div>
 							</div>
-						</div>
-						<div class="schaden-x">
-							<i class="icon icon-red-close"></i>
-						</div>
-						<div class="yellow-confirmation">
-							<i class="icon icon-confirmation-big"></i>
 						</div>
 					</div>
 
@@ -168,11 +174,17 @@
 				case 'ArrowLeft':
 				document.querySelector('.schaden-liste-row').classList.add('row-left');
 				document.querySelector('.schaden-liste-row').classList.remove('row-left-reverse');
+				document.querySelector('#arrow-left-path').setAttribute("fill", "rgba(255, 0, 0, 0.5");
+				document.querySelector('.arrow-left').style.transform = "rotate(180deg)";
+				document.querySelector('.arrow-left').style.WebkitTransitionDuration='0.7s';
 					break;
 
 				case 'ArrowRight':
 				document.querySelector('.schaden-liste-row').classList.add('row-left-reverse');
 				document.querySelector('.schaden-liste-row').classList.remove('row-left');
+				document.querySelector('#arrow-left-path').setAttribute("fill", "#d6d9de");
+				document.querySelector('.arrow-left').style.transform = "rotate(360deg)";
+				document.querySelector('.arrow-left').style.WebkitTransitionDuration='0.7s';
 					break;
 					
 				case 'ArrowUp':

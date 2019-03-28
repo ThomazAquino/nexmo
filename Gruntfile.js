@@ -9,6 +9,14 @@ module.exports = function (grunt) {
 				src: ['src/scripts.js'],
 				dest: 'dist/built.js',
 			},
+			geneva: {
+				src: ['src/fonts/geneva.ttf'],
+				dest: 'dist/fonts/geneva.ttf',
+			},
+			helvetica: {
+				src: ['src/fonts/HelveticaNeue-Medium.otf'],
+				dest: 'dist/fonts/HelveticaNeue-Medium.otf',
+			},
 		},
 		sass: {                              // Task
 			dist: { 
@@ -31,7 +39,7 @@ module.exports = function (grunt) {
 				files: [{
 					expand: true,
 					cwd: 'src/images',
-					src: ['**/*.{png,jpg}'],
+					src: ['**/*.{png,jpg,svg}'],
 					dest: 'dist/images/'
 				}]
 			}

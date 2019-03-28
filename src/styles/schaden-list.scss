@@ -38,8 +38,13 @@
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
 	position: relative;
-	margin-bottom: 35px;
+	margin-bottom: 70px;
 	z-index: 3;
+
+	.arrow-left {
+		position: absolute;
+    right: -7px;
+	}
 
 	.schaden-liste-genereal {
 		display: flex;
@@ -62,15 +67,13 @@
 
 		.schaden-liste-texts {
 			color: #707070;
-			padding-left: 20px;
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
+			padding-left: 10px;
 
 			.schaden-liste-title {
 				font-size: 12px;
 				font-weight: 300;
 				margin: 0;
+				margin-bottom: 10px;
 			}
 
 			.schaden-liste-subtitle {
@@ -87,27 +90,37 @@
 	}
 	.schaden-liste-menu {
 		display: flex;
-    flex-direction: column;
+    flex-direction: row;
     position: absolute;
-		right: 3px;
-    height: 100%;
-    padding: 5px 0;
+    bottom: -53%;
+    right: 0;
+    transform: translateY(-50%) translateX(-50%);
 
-		.square-icon {
+		.square-icon-repared {
 			background-color: #D6D9DE;
 			height: 49%;
 			padding: 17px;
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			border-radius: 5px;
+			border-radius: 10px;
 			-webkit-box-shadow: 0px 6px 33px -4px rgba(0, 0, 0, .16);
 			-moz-box-shadow: 0px 6px 33px -4px rgba(0, 0, 0, .16);
 			box-shadow: 0px 6px 33px -4px rgba(0, 0, 0, .16);
+		}
 
-			&:first-of-type {
-				margin-bottom: 5px;
-			}
+		.square-icon-no-repared {
+			background-color: #D6D9DE;
+			height: 49%;
+			padding: 17px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-left: 20px;
+    	border-radius: 60px;
+			-webkit-box-shadow: 0px 6px 33px -4px rgba(0, 0, 0, .16);
+			-moz-box-shadow: 0px 6px 33px -4px rgba(0, 0, 0, .16);
+			box-shadow: 0px 6px 33px -4px rgba(0, 0, 0, .16);
 		}
 	}
 }
@@ -144,9 +157,30 @@
 		transition: 1s;
 	}
 
+	.schaden-liste-menu {
+		animation: schaden-liste-menu-anim 0.5s forwards 0 ease-in;
+	}
+
 	animation: schaden-delet 1.3s forwards 0.6s ease-in;
 }
 
+.pre-row {
+	.repared-confirmation {
+		position: absolute;
+		top: 0;
+		border-radius: 20px;
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+		background: #BEF0A3;
+		z-index: 99999;
+		height: 100%;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		opacity: 0;
+	}
+}
 @keyframes schaden-swip{
 	0% {
 			transform: translateX(0);
@@ -166,8 +200,16 @@
 			transform: translateX(-100px);
 	}
 
+	1% {
+		transform: translateX(-95px);
+	}
+
+	90% {
+		transform: translateX(-10px);
+	}
+
 	100% {
-			transform: translateX(0);
+			transform: translate(0, 0);
 	}
 }
 
@@ -180,5 +222,15 @@
 	}
 	100% {
 			transform: translateY(-1000px);
+	}
+}
+
+@keyframes schaden-liste-menu-anim{
+	0% {
+		transform: translateY(-50%);
+	}
+
+	100% {
+		transform: translateY(-115%) !important;
 	}
 }
