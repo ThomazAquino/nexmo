@@ -1,0 +1,36 @@
+@import "autoload/reset";
+
+//@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "common/global";
+@import "common/variables";
+@import "components/buttons";
+@import "components/forms";
+@import "common/icons";
+
+@import "common/menu";
+
+
+.styled-select {
+	background: url('../images/icons/drop-arrow.png') no-repeat right center;
+
+	height: 34px;
+   overflow: hidden;
+   width: 100%;
+
+   select {
+	width: 120%;
+   background: transparent;
+   border: none;
+   font-size: 18px;
+   padding: 5px; /* If you add too much padding here, the options won't show in IE */
+   height: 35px;
+
+   &:focus {
+	   border: none;
+   }
+
+   &:before {
+	border: none;
+}
+   }
+}

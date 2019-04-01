@@ -109,6 +109,11 @@
 			box-shadow: 0px 6px 33px -4px rgba(0, 0, 0, .16);
 		}
 
+		.square-icon-repared-on {
+			background-color: rgba(190, 240, 163, 1);
+			transition: 1s;
+		}
+
 		.square-icon-no-repared {
 			background-color: #D6D9DE;
 			height: 49%;
@@ -121,6 +126,10 @@
 			-webkit-box-shadow: 0px 6px 33px -4px rgba(0, 0, 0, .16);
 			-moz-box-shadow: 0px 6px 33px -4px rgba(0, 0, 0, .16);
 			box-shadow: 0px 6px 33px -4px rgba(0, 0, 0, .16);
+		}
+
+		.square-icon-no-repared-on {
+			background-color: rgba(240, 163, 163, 1);
 		}
 	}
 }
@@ -153,7 +162,7 @@
 
 .schaden-delet-confirmation {
 	.yellow-confirmation {
-		opacity: 1;
+		opacity: 3;
 		transition: 1s;
 	}
 
@@ -179,6 +188,24 @@
 		align-items: center;
 		display: flex;
 		opacity: 0;
+		transform: translateY(-20px);
+	}
+
+	.no-repared-confirmation {
+		position: absolute;
+		top: 0;
+		border-radius: 20px;
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+		background-color: rgba(240, 163, 163, 1);
+		z-index: 99999;
+		height: 100%;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		opacity: 0;
+		transform: translateY(-20px);
 	}
 }
 @keyframes schaden-swip{
@@ -233,4 +260,25 @@
 	100% {
 		transform: translateY(-115%) !important;
 	}
+}
+
+// buttons
+
+.btns-bellow-menu {
+	display: flex;
+	justify-content: center;
+	margin: 30px 0;
+}
+
+.btn-more,
+.btn-list-check {
+	background-color: #EEB636;
+	border-radius: 50%;
+	position: relative;
+	margin: 0 15px;
+	width: 37px;
+	height: 37px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
